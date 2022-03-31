@@ -1,0 +1,17 @@
+let produtos = document.querySelector('#produtos')
+let botao = document.querySelector('#Comprar')
+
+botao.addEventListener('click', comprar)
+function comprar(){
+    let compra = "Pruduto comprado\n"
+    if (produtos.value == "Hamburguer Simples"){
+        compra += "Produto: " + produtos.value + ", R$45,00"
+    }else if (produtos.value == "Hamburguer Duplo"){
+        compra += "Produto: " + produtos.value + ", R$55,00"
+    }else if (produtos.value == "Hamburguer Duplo com Bacon"){
+        compra += "Produto: " + produtos.value + ", R$65,00"
+    }else {
+        compra += "produto não selecionado"
+    }
+    alert(compra)
+}
